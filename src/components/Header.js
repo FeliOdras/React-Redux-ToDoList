@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react';
 
 const Header = props => {
-    render()
     return (
         <header className="header">
             <h1>What to do?</h1>
