@@ -1,6 +1,14 @@
 import React from 'react';
 
 class ToDoForm extends React.Component {
+    constructor(props) {
+        super(props)
+
+        this.handleSubmit = this.handleSubmit.bind(this)
+    }
+
+    textInput = React.createRef();
+
     handleSubmit(e) {
         e.preventDefault();
         console.log(`Create new item`);
@@ -14,6 +22,7 @@ class ToDoForm extends React.Component {
                     name="name"
                     type="text"
                     placeholder="Add a new to-do item ..."
+                    ref={this.textInput}
                 />
                 <div className="input-group-append">
                     <button className="btn btn-outline-secondary" true="submit">
