@@ -4,7 +4,7 @@ import App from './App';
 import Help from './Help';
 import NotFound from './NotFound';
 
-const Router = () => {
+const Router = () => (
     <BrowserRouter>
         <Switch>
             <Route exact path='/' component={App} />
@@ -12,5 +12,6 @@ const Router = () => {
             <Route component={NotFound} />
         </Switch>
     </BrowserRouter>
-}
+)
+
 export default Router;
