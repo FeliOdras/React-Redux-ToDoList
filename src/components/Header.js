@@ -3,10 +3,10 @@ import React, { Fragment } from 'react';
 class Header extends React.Component {
     render() {
         return (
-            <Fragment>
+            <header className="header">
                 <h1>What to do?</h1>
                 <span className="tagline">This could be a bucket list.</span>
-            </Fragment>
+            </header>
         );
     }
 }
