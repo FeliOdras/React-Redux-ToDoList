@@ -33,6 +33,15 @@ class App extends React.Component {
         })
     }
 
+    toggleToDone = event => {
+        const checkbox = event.taget;
+
+        this.setState(state => {
+            state.toDoItems[checkbox.value].done = checkbox.checked;
+            return state;
+        })
+    }
+
     render() {
         return (
             <div className="container">
