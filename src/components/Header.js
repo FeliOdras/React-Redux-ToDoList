@@ -5,7 +5,7 @@ class Header extends React.Component {
         return (
             <header className="header">
                 <h1>What to do?</h1>
-                <span className="tagline">This could be a bucket list.</span>
+                <span className="tagline">{this.props.tagline}</span>
             </header>
         );
     }
