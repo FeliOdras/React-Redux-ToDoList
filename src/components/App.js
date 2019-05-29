@@ -26,6 +26,13 @@ class App extends React.Component {
         })
     }
 
+    updateToDoText = (uuid, text) => {
+        this.setState(state => {
+            state.toDoItems[uuid].text = text;
+            return state;
+        })
+    }
+
     render() {
         return (
             <div className="container">
