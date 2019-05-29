@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
 class Header extends React.Component {
     render() {
-        return <h1>What to do?</h1>;
+        return (
+            <Fragment>
+                <h1>What to do?</h1>
+                <span className="tagline">This could be a bucket list.</span>
+            </Fragment>
+        );
     }
 }
 
