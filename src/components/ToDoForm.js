@@ -9,7 +9,7 @@ class ToDoForm extends React.Component {
 
     textInput = React.createRef();
 
-    handleSubmit(e) {
+    handleSubmit = (e) => {
         e.preventDefault();
         console.log(`Create new item: ${this.textInput.current.value}`);
     }
