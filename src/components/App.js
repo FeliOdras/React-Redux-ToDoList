@@ -33,6 +33,13 @@ class App extends React.Component {
         })
     }
 
+    removeToDo = uuid => {
+        this.setState(state => {
+            delete state.toDoItems[uuid];
+            return state;
+        })
+    }
+
     toggleToDone = event => {
         const checkbox = event.taget;
 
